@@ -1,0 +1,124 @@
+,Race,Crime,Plea N,Plea %,Trial N,Trial %
+0,White,Grand Total,"14,526",96.6%,507,3.4%
+1,White,Administration of Justice,182,92.4%,15,7.6%
+2,White,Antitrust,12,100.0%,-,
+3,White,Arson,20,90.9%,2,9.1%
+4,White,Assault,119,94.4%,7,5.6%
+5,White,Bribery/Corruption,107,85.6%,18,14.4%
+6,White,Burglary/Trespass,15,88.2%,2,11.8%
+7,White,Child Pornography,"1,066",97.3%,30,2.7%
+8,White,Commercialized Vice,16,88.9%,2,11.1%
+9,White,Drug Possession,168,99.4%,1,0.6%
+10,White,Drug Trafficking,"4,895",98.2%,88,1.8%
+11,White,Environmental,99,97.1%,3,2.9%
+12,White,Extortion/Racketeering,74,97.4%,2,2.6%
+13,White,Firearms,"2,116",98.1%,40,1.9%
+14,White,Food and Drug,35,97.2%,1,2.8%
+15,White,Forgery/Counter/Copyright,131,100.0%,-,
+16,White,Fraud/Theft/Embezzlement,"2,479",94.9%,134,5.1%
+17,White,Immigration,561,99.3%,4,0.7%
+18,White,Individual Rights,25,92.6%,2,7.4%
+19,White,Kidnapping,20,100.0%,-,
+20,White,Manslaughter,9,100.0%,-,
+21,White,Money Laundering,327,87.7%,46,12.3%
+22,White,Murder,32,74.4%,11,25.6%
+23,White,National Defense,46,92.0%,4,8.0%
+24,White,Obscenity/Other Sex Offenses,173,99.4%,1,0.6%
+25,White,Prison Offenses,139,97.9%,3,2.1%
+26,White,Robbery,385,97.5%,10,2.5%
+27,White,Sexual Abuse,580,93.2%,42,6.8%
+28,White,Stalking/Harassing,108,88.5%,14,11.5%
+29,White,Tax,248,93.2%,18,6.8%
+30,White,Other,339,98.0%,7,2.0%
+31,Black,Grand Total,"14,579",95.1%,747,4.9%
+32,Black,Administration of Justice,142,93.4%,10,6.6%
+33,Black,Arson,21,91.3%,2,8.7%
+34,Black,Assault,172,89.6%,20,10.4%
+35,Black,Bribery/Corruption,93,90.3%,10,9.7%
+36,Black,Burglary/Trespass,14,100.0%,-,
+37,Black,Child Pornography,50,87.7%,7,12.3%
+38,Black,Commercialized Vice,40,90.9%,4,9.1%
+39,Black,Drug Possession,97,98.0%,2,2.0%
+40,Black,Drug Trafficking,"5,195",95.9%,224,4.1%
+41,Black,Environmental,4,100.0%,-,
+42,Black,Extortion/Racketeering,57,96.6%,2,3.4%
+43,Black,Firearms,"4,346",96.6%,155,3.4%
+44,Black,Food and Drug,1,100.0%,-,
+45,Black,Forgery/Counter/Copyright,97,100.0%,-,
+46,Black,Fraud/Theft/Embezzlement,"1,652",94.4%,98,5.6%
+47,Black,Immigration,308,95.4%,15,4.6%
+48,Black,Individual Rights,15,88.2%,2,11.8%
+49,Black,Kidnapping,29,72.5%,11,27.5%
+50,Black,Manslaughter,4,66.7%,2,33.3%
+51,Black,Money Laundering,193,93.7%,13,6.3%
+52,Black,Murder,110,74.8%,37,25.2%
+53,Black,National Defense,14,87.5%,2,12.5%
+54,Black,Obscenity/Other Sex Offenses,87,98.9%,1,1.1%
+55,Black,Prison Offenses,264,97.8%,6,2.2%
+56,Black,Robbery,"1,025",93.5%,71,6.5%
+57,Black,Sexual Abuse,166,82.2%,36,17.8%
+58,Black,Stalking/Harassing,34,94.4%,2,5.6%
+59,Black,Tax,156,94.0%,10,6.0%
+60,Black,Other,193,97.5%,5,2.5%
+61,Hispanic,Grand Total,"42,190",99.0%,430,1.0%
+62,Hispanic,Administration of Justice,238,97.9%,5,2.1%
+63,Hispanic,Antitrust,2,100.0%,-,
+64,Hispanic,Arson,9,75.0%,3,25.0%
+65,Hispanic,Assault,134,91.2%,13,8.8%
+66,Hispanic,Bribery/Corruption,75,94.9%,4,5.1%
+67,Hispanic,Burglary/Trespass,9,100.0%,-,
+68,Hispanic,Child Pornography,159,98.8%,2,1.2%
+69,Hispanic,Commercialized Vice,16,88.9%,2,11.1%
+70,Hispanic,Drug Possession,204,100.0%,-,
+71,Hispanic,Drug Trafficking,"8,597",98.0%,171,2.0%
+72,Hispanic,Environmental,21,100.0%,-,
+73,Hispanic,Extortion/Racketeering,35,97.2%,1,2.8%
+74,Hispanic,Firearms,"1,548",98.3%,26,1.7%
+75,Hispanic,Food and Drug,6,100.0%,-,
+76,Hispanic,Forgery/Counter/Copyright,29,96.7%,1,3.3%
+77,Hispanic,Fraud/Theft/Embezzlement,"1,518",97.7%,35,2.3%
+78,Hispanic,Immigration,"27,959",99.7%,83,0.3%
+79,Hispanic,Individual Rights,13,86.7%,2,13.3%
+80,Hispanic,Kidnapping,25,100.0%,-,
+81,Hispanic,Manslaughter,2,100.0%,-,
+82,Hispanic,Money Laundering,488,95.5%,23,4.5%
+83,Hispanic,Murder,108,81.8%,24,18.2%
+84,Hispanic,National Defense,114,100.0%,-,
+85,Hispanic,Obscenity/Other Sex Offenses,55,98.2%,1,1.8%
+86,Hispanic,Prison Offenses,164,99.4%,1,0.6%
+87,Hispanic,Robbery,265,95.7%,12,4.3%
+88,Hispanic,Sexual Abuse,144,90.0%,16,10.0%
+89,Hispanic,Stalking/Harassing,21,100.0%,-,
+90,Hispanic,Tax,65,95.6%,3,4.4%
+91,Hispanic,Other,167,98.8%,2,1.2%
+92,Other,Grand Total,"2,613",95.0%,137,5.0%
+93,Other,Administration of Justice,87,92.6%,7,7.4%
+94,Other,Antitrust,6,100.0%,-,
+95,Other,Arson,7,70.0%,3,30.0%
+96,Other,Assault,296,95.5%,14,4.5%
+97,Other,Bribery/Corruption,31,93.9%,2,6.1%
+98,Other,Burglary/Trespass,24,100.0%,-,
+99,Other,Child Pornography,48,94.1%,3,5.9%
+100,Other,Commercialized Vice,10,100.0%,-,
+101,Other,Drug Possession,17,100.0%,-,
+102,Other,Drug Trafficking,616,98.2%,11,1.8%
+103,Other,Environmental,40,100.0%,-,
+104,Other,Extortion/Racketeering,12,92.3%,1,7.7%
+105,Other,Firearms,228,97.4%,6,2.6%
+106,Other,Food and Drug,4,100.0%,-,
+107,Other,Forgery/Counter/Copyright,15,100.0%,-,
+108,Other,Fraud/Theft/Embezzlement,380,92.9%,29,7.1%
+109,Other,Immigration,141,94.0%,9,6.0%
+110,Other,Individual Rights,6,85.7%,1,14.3%
+111,Other,Kidnapping,9,90.0%,1,10.0%
+112,Other,Manslaughter,55,96.5%,2,3.5%
+113,Other,Money Laundering,69,83.1%,14,16.9%
+114,Other,Murder,41,82.0%,9,18.0%
+115,Other,National Defense,14,100.0%,-,
+116,Other,Obscenity/Other Sex Offenses,75,100.0%,-,
+117,Other,Prison Offenses,33,97.1%,1,2.9%
+118,Other,Robbery,48,90.6%,5,9.4%
+119,Other,Sexual Abuse,166,92.2%,14,7.8%
+120,Other,Stalking/Harassing,42,100.0%,-,
+121,Other,Tax,43,93.5%,3,6.5%
+122,Other,Other,50,96.2%,2,3.8%
