@@ -29,7 +29,7 @@ crime_type = ["Administration of Justice", "Antitrust","Arson","Assault","Briber
               "Food and Drug","Forgery/Counter/Copyright","Fraud/Theft/Embezzlement","Immigration",
               "Individual Rights","Kidnapping","Manslaughter","Money Laundering","Murder",
               "National Defense","Obscenity/Other Sex Offenses","Prison Offenses","Robbery","Sexual Abuse",
-              "Stalking/Harassing","Tax"]
+              "Stalking/Harassing","Tax","Other"]
 state = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
          "District Of Columbia","Florida","Georgia","Guam","Hawaii","Idaho","Illinois","Indiana","Iowa",
          "Kansas","Kentucky","Louisiana","Maine","Mariana Islands","Maryland","Massachusetts","Michigan",
@@ -179,9 +179,11 @@ def sentence_length(driver, race, crime_type):
         data.append([ele for ele in cols[:2]]) # append the title
         # all odd elements in the list contain value
         data.append([ele for ele in cols[-2:]]) # append the result
+    #print(data)
     # get all column names extracted from the nested list
     column_data = [item for sublist in data[::2] for item in sublist]
     #print(column_data)
+    #print("\n")
     # get all data values extracted from the nested list
     row_data = [item for sublist in data[1::2] for item in sublist]
     #print(row_data)
@@ -208,7 +210,7 @@ def toggle_dropdown(driver, category):
     """
     num=filters.get(category)
     driver.find_elements_by_xpath("//img[@src='/bicustom/res/s_IDA/master/selectdropdown_ena.png']")[num].click()
-
+    print("Dropdown has been toggled")
 
 # Select all or unselect elements in the dropdown
 def select_all(driver, checkbox_list):
@@ -236,12 +238,16 @@ def select_all(driver, checkbox_list):
     driver.find_element_by_xpath("//body").click()
 
 # Unselect all or unselect elements in the dropdown
-def unselect_all(driver, checkbox_list):
+def unselect_all(driver, checkbox_list, category):
     """
     This functions selects/unselects all checkboxes in the drop down.
     Before running this function make sure the drop down list is open.
     checkbox_list: list of checkbox elements in a particular filter category eg crime_type, race
     """
+    num=filters.get(category)
+    dropdown = driver.find_elements_by_xpath("//img[@src='/bicustom/res/s_IDA/master/selectdropdown_ena.png']")[num]
+    dropdown.click()
+    time.sleep(5)
     for i in checkbox_list:
         parent_elem = driver.find_element_by_xpath("//div[@title='" + i + "']")
         child_elements = parent_elem.find_element_by_xpath(".//*").find_element_by_xpath(".//*")
@@ -259,3 +265,45 @@ def unselect_all(driver, checkbox_list):
     print("All checkboxes toggled to off")
     # Click out so that the page can reload
     driver.find_element_by_xpath("//body").click()
+
+# Open a dropdown of a particular category, toggle a dropdown for a known value and update the dashboard
+def one_checkbox(driver, checkbox_value, check_status, category, val=1):
+    """
+    checkbox_value: "White", "Black", "Hispanic", "Other"
+    checked_status: "true" or "None"
+    category: "Race", "Crime Type"
+    val: for "Other" the val is either 1 or 0
+    """
+
+    num=filters.get(category)
+    dropdown = driver.find_elements_by_xpath("//img[@src='/bicustom/res/s_IDA/master/selectdropdown_ena.png']")[num]
+    dropdown.click()
+    time.sleep(2)
+
+    if checkbox_value == "Other":
+        if category == "Race":
+            parent_elem = driver.find_elements_by_xpath("//div[@title='" + checkbox_value + "']")[val]
+        elif category == "Crime Type":
+            parent_elem = driver.find_elements_by_xpath("//div[@title='" + checkbox_value + "']")[val]
+    else:
+        parent_elem = driver.find_element_by_xpath("//div[@title='" + checkbox_value + "']")
+
+    child_elements = parent_elem.find_element_by_xpath(".//*").find_element_by_xpath(".//*")
+
+    if child_elements.get_attribute("type") == 'checkbox':
+        print("Element is a checkbox")
+
+        if check_status == child_elements.get_attribute("checked"):
+            print("Checkbox status as expected: {}".format(checkbox_value))
+        else:
+            # Select the checkbox
+            child_elements.click()
+            # Click out so that the page can reload
+            driver.find_element_by_xpath("//body").click()
+            print("Checkbox updated: {}".format(checkbox_value))
+
+    else:
+        print("Element is not a checkbox")
+    time.sleep(2)
+    #num=filters.get(category)
+    #dropdown = driver.find_elements_by_xpath("//img[@src='/bicustom/res/s_IDA/master/selectdropdown_ena.png']")[num].click()
